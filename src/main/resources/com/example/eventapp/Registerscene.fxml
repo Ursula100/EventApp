@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.eventapp.RegisterSceneController">
+   <children>
+      <SplitPane dividerPositions="0.0872326203208556" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="40.0" minWidth="600.0" prefHeight="40.0" prefWidth="600.0">
+               <children>
+                  <Button layoutX="526.0" layoutY="13.0" mnemonicParsing="false" onAction="#onBackButton" text="Back" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="13.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="520.0" minWidth="600.0" prefHeight="520.0" prefWidth="600.0">
+               <children>
+                  <Label layoutX="182.0" layoutY="76.0" text="EMAIL*" />
+                  <Label layoutX="172.0" layoutY="135.0" text="PHONE" />
+                  <Label layoutX="168.0" layoutY="192.0" text="WEBSITE" />
+                  <Label layoutX="150.0" layoutY="250.0" text="FACEBOOK" />
+                  <Label layoutX="144.0" layoutY="301.0" text="INSTAGRAM" />
+                  <Label layoutX="149.0" layoutY="352.0" text="PASSWORD*" />
+                  <Label layoutX="96.0" layoutY="396.0" text="CONFIRM PASSWORD*" />
+                  <Label layoutX="182.0" layoutY="23.0" text="NAME*" />
+                  <PasswordField fx:id="password" alignment="CENTER_RIGHT" layoutX="237.0" layoutY="348.0" opacity="0.71" prefHeight="26.0" prefWidth="169.0" promptText="Enter Password" />
+                  <PasswordField fx:id="confirmPassword" alignment="TOP_RIGHT" layoutX="237.0" layoutY="392.0" opacity="0.72" prefHeight="26.0" prefWidth="169.0" promptText="Confirm Password" />
+                  <TextField fx:id="name" alignment="TOP_RIGHT" layoutX="237.0" layoutY="19.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.67" prefHeight="27.0" prefWidth="169.0" promptText="Enter First and Last Name" />
+                  <TextField fx:id="email" alignment="TOP_RIGHT" layoutX="237.0" layoutY="72.0" opacity="0.64" prefHeight="26.0" prefWidth="169.0" promptText="Enter Valid Email Address" />
+                  <TextField fx:id="telephone" alignment="TOP_RIGHT" layoutX="237.0" layoutY="131.0" opacity="0.79" prefHeight="26.0" prefWidth="169.0" promptText="Enter Phone Number" text=" " />
+                  <TextField fx:id="website" alignment="TOP_RIGHT" layoutX="237.0" layoutY="188.0" opacity="0.72" prefHeight="26.0" prefWidth="169.0" promptText="Enter Website Address" text=" " />
+                  <TextField fx:id="sMedia1" alignment="TOP_RIGHT" layoutX="237.0" layoutY="246.0" opacity="0.72" prefHeight="26.0" prefWidth="169.0" promptText="Enter Facebook Address " text="   " />
+                  <TextField fx:id="sMedia2" alignment="TOP_RIGHT" layoutX="237.0" layoutY="297.0" opacity="0.72" prefHeight="26.0" prefWidth="169.0" promptText="Enter Instagram Address" text=" " />
+                  <Button layoutX="255.0" layoutY="481.0" mnemonicParsing="false" onAction="#onRegister" text="REGISTER" />
+                  <Text fx:id="feedback" fill="#f5060e" layoutX="132.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="313.14453125" />
+                  <Text fx:id="emailFeedback" fill="#e70707" layoutX="124.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="378.9367218017578" />
+                  <Text fx:id="passwordFeedback" fill="#f20909" layoutX="96.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="450.1367950439453" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
